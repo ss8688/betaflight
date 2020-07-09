@@ -69,11 +69,11 @@
 #define USE_BARO
 #define USE_BARO_BMP280
 
-#define USE_MAG
-#define USE_MAG_AK8963
+//#define USE_MAG
+//#define USE_MAG_AK8963
 //#define USE_MAG_HMC5883 // External
 
-#define MAG_AK8963_ALIGN CW270_DEG_FLIP
+//#define MAG_AK8963_ALIGN CW270_DEG_FLIP
 
 //#define USE_RANGEFINDER
 //#define USE_RANGEFINDER_HCSR04
@@ -124,19 +124,19 @@
 #define SPI2_MISO_PIN           PB14
 #define SPI2_MOSI_PIN           PB15
 
-#define USE_SDCARD
-#define USE_SDCARD_SPI
-#define SDCARD_DETECT_INVERTED
-#define SDCARD_DETECT_PIN                   PC14
-#define SDCARD_SPI_INSTANCE                 SPI2
-#define SDCARD_SPI_CS_PIN                   SPI2_NSS_PIN
+//#define USE_SDCARD
+//#define USE_SDCARD_SPI
+//#define SDCARD_DETECT_INVERTED
+//#define SDCARD_DETECT_PIN                   PC14
+//#define SDCARD_SPI_INSTANCE                 SPI2
+//#define SDCARD_SPI_CS_PIN                   SPI2_NSS_PIN
 
 // Note, this is the same DMA channel as UART1_RX. Luckily we don't use DMA for USART Rx.
-#define SDCARD_DMA_CHANNEL_TX               DMA1_Channel5
+//#define SDCARD_DMA_CHANNEL_TX               DMA1_Channel5
 
-#define GYRO_1_CS_PIN                    PB9
-#define GYRO_1_SPI_INSTANCE              SPI1
-
+//#define GYRO_1_CS_PIN                    PB9
+//#define GYRO_1_SPI_INSTANCE              SPI1
+ 
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 
 #define USE_ADC
@@ -157,9 +157,9 @@
 #define USE_MSP_CURRENT_METER
 #endif
 
-#define USE_TRANSPONDER
+//#define USE_TRANSPONDER
 
-#define ENABLE_BLACKBOX_LOGGING_ON_SDCARD_BY_DEFAULT
+//#define ENABLE_BLACKBOX_LOGGING_ON_SDCARD_BY_DEFAULT
 
 #define DEFAULT_RX_FEATURE      FEATURE_RX_PPM
 #define DEFAULT_FEATURES        (FEATURE_TRANSPONDER  | FEATURE_RSSI_ADC | FEATURE_TELEMETRY)
@@ -176,3 +176,13 @@
 #else
 #define USED_TIMERS             (TIM_N(1) | TIM_N(2) | TIM_N(3) | TIM_N(8) | TIM_N(15) | TIM_N(16))
 #endif
+
+
+
+
+
+
+
+
+#define BRUSHED_MOTORS
+
