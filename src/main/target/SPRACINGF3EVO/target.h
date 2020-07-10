@@ -94,7 +94,7 @@
 
 #define SERIAL_PORT_COUNT       4
 
-#define USE_ESCSERIAL
+//#define USE_ESCSERIAL
 #define ESCSERIAL_TIMER_TX_PIN  PA15  // (HARDARE=0,PPM)
 
 #define UART1_TX_PIN            PA9
@@ -112,7 +112,7 @@
 
 #define USE_SPI
 #define USE_SPI_DEVICE_1 // PB9,3,4,5 on AF5 SPI1 (MPU)
-#define USE_SPI_DEVICE_2 // PB12,13,14,15 on AF5 SPI2 (SDCard)
+//#define USE_SPI_DEVICE_2 // PB12,13,14,15 on AF5 SPI2 (SDCard)
 
 #define SPI1_NSS_PIN            PB9
 #define SPI1_SCK_PIN            PB3
