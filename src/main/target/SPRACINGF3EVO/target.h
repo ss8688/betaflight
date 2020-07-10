@@ -126,16 +126,16 @@
 
 //#define USE_SDCARD
 //#define USE_SDCARD_SPI
-//#define SDCARD_DETECT_INVERTED
-//#define SDCARD_DETECT_PIN                   PC14
-//#define SDCARD_SPI_INSTANCE                 SPI2
-//#define SDCARD_SPI_CS_PIN                   SPI2_NSS_PIN
+#define SDCARD_DETECT_INVERTED
+#define SDCARD_DETECT_PIN                   PC14
+#define SDCARD_SPI_INSTANCE                 SPI2
+#define SDCARD_SPI_CS_PIN                   SPI2_NSS_PIN
 
 // Note, this is the same DMA channel as UART1_RX. Luckily we don't use DMA for USART Rx.
-//#define SDCARD_DMA_CHANNEL_TX               DMA1_Channel5
+#define SDCARD_DMA_CHANNEL_TX               DMA1_Channel5
 
-//#define GYRO_1_CS_PIN                    PB9
-//#define GYRO_1_SPI_INSTANCE              SPI1
+#define GYRO_1_CS_PIN                    PB9
+#define GYRO_1_SPI_INSTANCE              SPI1
  
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 
